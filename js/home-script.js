@@ -15,6 +15,7 @@ $(function () {
     var serviceMain = $(this).find('.service-main');
     var serviceImg = $(this).find('.service-main').find('img');
     var serviceDescription = $(this).find('.service-description');
+    var serviceDescriptionList = $(this).find('.service-description li');
     var mainTweenProps = {
       scale: .05,
       transform: 'translate(0,0) scale(0.85)',
@@ -45,11 +46,22 @@ $(function () {
     if (!$(this).hasClass("active")) {
       $(this).addClass("active");
       TweenMax.to(serviceMain, .6, mainTweenProps);
-      TweenMax.to(serviceDescription, .6, desTweenProps);
+      // TweenMax.to(serviceDescription, .6, desTweenProps);
+      var staggerTween = TweenMax.staggerFromTo(serviceDescriptionList, 0.42,
+        {
+          scale: 0,
+        },
+        {
+          scale: 1,
+          opacity: 1
+        },
+        0.4
+      );
     } else {
       $(this).removeClass("active");
+      TweenMax.killTweensOf(serviceDescriptionList);
       TweenMax.to(serviceMain, .6, reverseMainTween);
-      TweenMax.to(serviceDescription, .6, reverseDesTween);
+      TweenMax.to(serviceDescriptionList, .6, reverseDesTween);
     }
   });
 
@@ -82,7 +94,7 @@ $(function () {
 function initScrollMagic() {
   var tweenDG = new TimelineMax();
   var $clientLogo = $('.client-logo img');
-  var triggerEndExtra = 2;
+  var triggerEndExtra = 1.7;
   // initialize scrollmagic
   controller = new ScrollMagic.Controller();
 

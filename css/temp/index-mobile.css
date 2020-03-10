@@ -1,0 +1,421 @@
+document,
+body,
+.section,
+.content,
+p {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+  -ms-touch-action: none;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 22px;
+  line-height: 27px;
+  margin: 0px 30px 30px 30px;
+}
+h4 {
+  font-size: 12px;
+  line-height: 20px;
+}
+h5 {
+  font-size: 10px;
+  line-height: 15px;
+}
+#main-logo img,
+#resume-icon img {
+  width: 100%;
+}
+#main-logo {
+  position: fixed;
+  left: 20px;
+  width: 55px;
+}
+#resume-icon {
+  position: fixed;
+  left: 85px;
+  width: 55px;
+}
+#keysIcon {
+  display: none;
+}
+.button {
+  margin-top: 35px;
+}
+.button a {
+  border-width: 2px;
+}
+
+/*Custome CSS For the FullPage (HomePage) */
+
+.section {
+  min-height: 400px;
+  min-width: 320px;
+}
+#firstSection {
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../img/index-bg-gas-mobile.jpg');
+}
+#secondSection {
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../img/index-bg-mavcom-mobile.jpg');
+}
+#thirdSection {
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../img/index-bg-firstclasse-mobile.jpg');
+}
+#fourthSection {
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../img/index-bg-privasia-mobile.jpg');
+}
+
+/*
+#firstSection #promise {
+    margin: 20px 30px 0px 30px;
+    opacity: 0;
+}
+*/
+
+/*
+#firstSection h2 {
+    font-size: 24pt;
+    line-height: 28pt;
+}
+*/
+
+@media all and (max-width: 480px) {
+  #firstSection h2 {
+    font-size: 16pt;
+    line-height: 22pt;
+  }
+}
+#secondSection {
+  /*	top: 0px;*/
+  background-color: #272727;
+}
+#secondSection .content {
+  height: auto;
+}
+#secondSection #officeContainer {
+  display: none;
+}
+
+/*
+#sectionContact .officeBlock {
+	width: 80%;
+	height: 120px;
+	text-align: center;
+	vertical-align: middle;
+	margin: 3px 0px;
+}
+#sectionContact .officeBlock h1 {
+	font-size: 14pt;
+	margin-top: 40px;
+	line-height: 14pt;
+	margin-bottom: 0px;
+}
+#sectionContact .officeBlock h2 {
+	font-size: 14pt;
+	margin-top: 0px;
+}
+#sectionContact #officeChicago {
+	background-image: url('../img/locations/night_chicago.jpg');
+}
+#sectionContact #officeLosAngeles {
+	background-image: url('../img/locations/night_la.jpg');
+}
+#sectionContact #officeSeattle {
+	background-image: url('../img/locations/night_seattle.jpg');
+}
+*/
+
+#secondSection #footer {
+  /*	height: 410px;*/
+  /*	padding: 40px 0px 20px 0px;*/
+}
+#secondSection #footer h1 {
+  font-size: 14pt;
+  line-height: 22pt;
+  margin: -50px 30px 30px 30px;
+  padding: 0;
+}
+#secondSection #footer p {
+  font-size: 12pt;
+  line-height: 14pt;
+  margin: 0px;
+}
+#secondSection .contact {
+  font-size: 10pt;
+  margin: 5px 8px;
+}
+#secondSection .button {
+  display: block;
+  position: relative;
+  bottom: 0;
+  margin: 10px 0px 20px 0px;
+}
+#secondSection #footerMenu {
+  bottom: -220px;
+}
+#secondSection #footerMenu p,
+#footerMenu a {
+  font-size: 8pt;
+}
+#secondSection li:nth-child(1) {
+  width: 100%;
+  border-right: 0;
+}
+.sectionDescription {
+  height: 45%;
+  z-index: 2 !important;
+  bottom: 0px;
+}
+.sectionDescription .WorkInfoMeta {
+  display: inline;
+}
+.sectionDescription .firsLine {
+  margin: 0px;
+  width: 100%;
+}
+.sectionDescription .title {
+  margin-top: 0px;
+}
+.sectionDescription .logo {
+  margin: auto;
+}
+.sectionDescription .videoButton {
+  width: 100%;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+.sectionDescription .title .inner {
+  font-size: 25px;
+  font-weight: 600;
+}
+.sectionDescription .videoButton .directButton {
+  margin-top: 0px;
+}
+.firstWorkInfoSection {
+  width: 100%;
+}
+.secondWorkInfoSection {
+  display: none;
+}
+.firstWorkInfoSection .textoverview {
+  font-size: 11px;
+  line-height: 15px;
+  margin-top: 20px;
+}
+.firstWorkInfoSection .headingoverview {
+  font-size: 10px;
+  top: 55px;
+}
+.bg-videos {
+  display: none;
+}
+@media only screen and (orientation: portrait) {
+  #conteneur .content_box a.image.number1 {
+    background-image: url(../img/index-bg-fashion-mobile.jpg);
+  }
+  #conteneur .content_box a.image.number2 {
+    background-image: url(../img/index-bg-fobo-mobile.jpg);
+  }
+  #conteneur .content_box a.image.number3 {
+    background-image: url(../img/index-bg-maybank-mobile.jpg);
+  }
+  #conteneur .content_box a.image.number4 {
+    background-image: url(../img/index-bg-jr-mobile.jpg);
+  }
+  #conteneur .content_box a.image.number5 {
+    background-image: url(../img/index-bg-epilepsy-mobile.jpg);
+  }
+  #conteneur .content_box a.image.number6 {
+    background-image: url(../img/index-bg-kingdom.jpg);
+  }
+  #conteneur .content_box a.image.number7 {
+    background-image: url(../img/index-bg-lg-mobile.jpg);
+  }
+  #conteneur .content_box a.image.number8 {
+    background-image: url(../img/index-bg-sea.jpg);
+  }
+}
+#conteneur .content_box a .image_sup {
+}
+
+/*On Hover Logos*/
+
+#conteneur .content_box a .fashion {
+  background: url(../img/index-logo-hover-fashion-mobile.png) no-repeat center
+    center transparent;
+  background-size: 130%;
+}
+#conteneur .content_box a .maybank {
+  background: url(../img/index-logo-hover-maybank-mobile.png) no-repeat center
+    center transparent;
+  background-size: 85%;
+}
+#conteneur .content_box a .fobo {
+  background: url(../img/index-logo-hover-fobo-mobile.png) no-repeat center
+    center transparent;
+}
+#conteneur .content_box a .jr {
+  background: url(../img/index-logo-hover-jr-mobile.png) no-repeat center center
+    transparent;
+  background-size: 90%;
+}
+#conteneur .content_box a .kingdom {
+  background: url(../img/index-logo-hover-kingdom.png) no-repeat center center
+    transparent;
+  background-size: 120%;
+}
+#conteneur .content_box a .lg {
+  background: url(../img/index-logo-hover-lg.png) no-repeat center center
+    transparent;
+  background-size: 110%;
+}
+#conteneur .content_box a .epilepsy {
+  background: url(../img/index-logo-hover-epilepsy-mobile.png) no-repeat center
+    center transparent;
+  background-size: 130%;
+}
+#conteneur .content_box a .seagames {
+  background: url(../img/index-logo-hover-seagames-mobile.png) no-repeat center
+    center transparent;
+  background-size: 140%;
+}
+.mobileOverview .firstWorkInfoSection.web {
+  display: none;
+}
+.mobileOverview .firstWorkInfoSection.mobile {
+  display: flex;
+}
+@media only screen and (orientation: landscape) {
+  .firstWorkInfoSection {
+    width: 720px;
+    margin-top: 20px;
+  }
+  .firstWorkInfoSection .headingoverview {
+    /* width: 180px; */
+  }
+  .firstWorkInfoSection .headingoverview {
+    top: 29px;
+  }
+  .sectionDescription {
+    height: 60%;
+    bottom: 0px;
+  }
+  .firstWorkInfoSection .textoverview {
+    max-width: 70%;
+  }
+}
+
+/*SideBar*/
+
+#sidebar-wrapper.active {
+  width: 100%;
+}
+
+/*TESTINGGG*/
+
+/*
+
+html,
+body {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+}
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    width: 100% !important;
+    overflow: hidden;
+}
+.mask img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tilt-bar {
+    position: fixed;
+    bottom: 30px;
+    left: 10px;
+    right: 10px;
+    height: 1px;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.tilt-indicator {
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 1px;
+    position: absolute;
+}
+.mask img,
+.tilt-indicator {
+    -webkit-transition: -webkit-transform 0.2s linear;
+    -moz-transition: -moz-transform 0.2s linear;
+    -ms-transition: -ms-transform 0.2s linear;
+    transition: transform 0.2s linear;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    transform: translatez(0);
+}
+.mask img,
+.tilt-indicator {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    transition: none;
+}
+.is-resizing {
+    visibility: hidden;
+}*/
+
+#maximize {
+  font-family: initial;
+  font-size: 13px;
+  cursor: pointer;
+}
+#maximize i {
+  font-size: 12px;
+  margin-left: 2px;
+}

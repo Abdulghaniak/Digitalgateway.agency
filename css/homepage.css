@@ -75,11 +75,35 @@
 }
 
 #services .service-description {
-    opacity: 0;
-    visibility: hidden;
+    padding: 0 40px;
 }
 
+#services .service-description ul .half-list {
+    width: 100%;
+    display: inline-block;
+}
 
+#services .service-description ul li{
+    opacity: 0;
+    padding-top: 3px;
+}
+#services .service-description ul{
+    list-style-type: none;
+}
+
+#services .service-description ul.two-col{
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    padding: 0;
+}
+
+#services .service-description ul.two-col li {
+    list-style-position: inside;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
 
 #services .services-row .service-second {
     background-color: var(--black-shade);
@@ -353,10 +377,13 @@ ul.clients li.client-logo img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 65%;
 }
 
 ul.clients {
     margin: 30px 0px;
     padding: 0px;
+}
+ul.clients li.client-logo {
+    margin-bottom: 20px;
 }

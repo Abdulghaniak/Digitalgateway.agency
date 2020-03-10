@@ -110,6 +110,8 @@ section {
 
 body {
     line-height: 1;
+  touch-action: none;
+
 }
 
 ol,
@@ -369,174 +371,6 @@ li {
 ul.large li {
     line-height: 21px;
 }
-
-/* #Images
-================================================== */
-img.scale-with-grid {
-    max-width: 100%;
-    height: auto;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
-
-/* #Buttons
-================================================== */
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-    background: #eee;
-    /* Old browsers */
-    background: #eeeeee -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
-    /* FF3.6+ */
-    background: #eeeeee -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.2)));
-    /* Chrome,Safari4+ */
-    background: #eeeeee -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: #eeeeee -o-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
-    /* Opera11.10+ */
-    background: #eeeeee -ms-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
-    /* IE10+ */
-    background: #eeeeee linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
-    /* W3C */
-    border: 1px solid #aaa;
-    border-top: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    color: #444;
-    display: inline-block;
-    font-size: 11px;
-    font-weight: bold;
-    text-decoration: none;
-    text-shadow: 0 1px rgba(255, 255, 255, 0.75);
-    cursor: pointer;
-    margin-bottom: 20px;
-    line-height: normal;
-    padding: 8px 10px;
-    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover {
-    color: #222;
-    background: #ddd;
-    /* Old browsers */
-    background: #dddddd -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
-    /* FF3.6+ */
-    background: #dddddd -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.3)));
-    /* Chrome,Safari4+ */
-    background: #dddddd -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: #dddddd -o-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
-    /* Opera11.10+ */
-    background: #dddddd -ms-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
-    /* IE10+ */
-    background: #dddddd linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
-    /* W3C */
-    border: 1px solid #888;
-    border-top: 1px solid #aaa;
-    border-left: 1px solid #aaa;
-}
-
-/* Fix for odd Mozilla border & padding issues */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
-
-/* #Forms
-================================================== */
-form {
-    margin-bottom: 20px;
-}
-
-fieldset {
-    margin-bottom: 20px;
-}
-
-input[type="text"],
-input[type="password"],
-input[type="email"],
-textarea,
-select {
-    border: 1px solid #ccc;
-    padding: 6px 4px;
-    outline: none;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    font: inherit;
-    color: #777;
-    margin: 0;
-    width: 210px;
-    max-width: 100%;
-    display: block;
-    margin-bottom: 20px;
-    background: #fff;
-}
-
-select {
-    padding: 0;
-}
-
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-    border: 1px solid #aaa;
-    color: #444;
-    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-}
-
-textarea {
-    min-height: 60px;
-}
-
-label,
-legend {
-    display: block;
-    font-weight: bold;
-    font-size: 13px;
-}
-
-select {
-    width: 220px;
-}
-
-input[type="checkbox"] {
-    display: inline;
-}
-
-label span,
-legend span {
-    font-weight: normal;
-    font-size: 13px;
-    color: #444;
-}
-
-/* #Misc
-================================================== */
-.remove-bottom {
-    margin-bottom: 0 !important;
-}
-
-.half-bottom {
-    margin-bottom: 10px !important;
-}
-
-.add-bottom {
-    margin-bottom: 20px !important;
-}
-
 /* ==========================================================================
     #index-Main
 ========================================================================== */
@@ -1409,7 +1243,6 @@ h5 {
         color: #fff;
         font-size: 1.3rem;
         cursor: pointer;
-        z-index: 201
     }
 
     #introContent {
@@ -1773,35 +1606,36 @@ h5 {
 }
 
 #conteneur .content_box a .fashion {
-    background: url(../img/projects/index-logo-hover-fashion.png) no-repeat center center transparent;
+    background: url(../img/projects/logos/fashionvalet.png) no-repeat center center transparent;
 }
 
 #conteneur .content_box a .maybank {
-    background: url(../img/projects/index-logo-hover-maybank.png) no-repeat center center transparent;
+    background: url(../img/projects/logos/maybank.png) no-repeat center center transparent;
 }
 
 #conteneur .content_box a .fobo {
-    background: url(../img/projects/index-logo-hover-fobo.png) no-repeat center center transparent;
+    background: url(../img/projects/logos/fobo.png) no-repeat center center transparent;
 }
 
 #conteneur .content_box a .jr {
-    background: url(../img/projects/index-logo-hover-jr.png) no-repeat center center transparent;
+    background: url(../img/projects/logos/jr.png) no-repeat center center transparent;
 }
 
 #conteneur .content_box a .kingdom {
-    background: url(../img/projects/index-logo-hover-kingdom.png) no-repeat center center transparent;
-}
-
-#conteneur .content_box a .lg {
-    background: url(../img/projects/index-logo-hover-lg.png) no-repeat center center transparent;
+    background: url(../img/projects/logos/kingdom.png) no-repeat center center transparent;
 }
 
 #conteneur .content_box a .epilepsy {
-    background: url(../img/projects/index-logo-hover-epilepsy.png) no-repeat center center transparent;
+    background: url(../img/projects/logos/epilepsy.png) no-repeat center center transparent;
 }
 
-#conteneur .content_box a .seagames {
-    background: url(../img/projects/index-logo-hover-seagames.png) no-repeat center center transparent;
+#conteneur .content_box a .syr-motors {
+    background: url(../img/projects/logos/syrian-motors.png) no-repeat center center transparent;
+}
+
+
+#conteneur .content_box a .aqarat-syr {
+    background: url(../img/projects/logos/aqarat-syr.png) no-repeat center center transparent;
 }
 
 #conteneur .content_box a.image {
@@ -1824,36 +1658,35 @@ h5 {
 }
 
 #conteneur .content_box a.image.number1 {
-    background-image: url(../img/projects/index-bg-fashion.jpg);
+    background-image: url(../img/projects/showcase-page/collections/fashionvalet.jpg);
 }
 
 #conteneur .content_box a.image.number2 {
-    background-image: url(../img/projects/index-bg-fobo.jpg);
+    background-image: url(../img/projects/showcase-page/collections/fobo.jpg);
 }
 
 #conteneur .content_box a.image.number3 {
-    background-image: url(../img/projects/index-bg-maybank.jpg);
+    background-image: url(../img/projects/showcase-page/collections/maybank.jpg);
 }
 
 #conteneur .content_box a.image.number4 {
-    background-image: url(../img/projects/index-bg-jr.jpg);
+    background-image: url(../img/projects/showcase-page/collections/jr.jpg);
 }
 
 #conteneur .content_box a.image.number5 {
-    background-image: url(../img/projects/index-bg-epilepsy.jpg);
+    background-image: url(../img/projects/showcase-page/collections/epilepsy.jpg);
 }
 
 #conteneur .content_box a.image.number6 {
-    background-image: url(../img/projects/index-bg-kingdom.jpg);
+    background-image: url(../img/projects/showcase-page/collections/kingdom.jpg);
 }
 
 #conteneur .content_box a.image.number7 {
-    background-image: url(../img/projects/index-bg-lg.jpg);
-    /*            background-image: url(http://www.mymrt.com.my/img/stations-2-1.jpg);*/
+    background-image: url(../img/projects/showcase-page/collections/syrian-motors.jpg);
 }
 
 #conteneur .content_box a.image.number8 {
-    background-image: url(../img/projects/index-bg-sea.jpg);
+    background-image: url(../img/projects/showcase-page/collections/aqarat-syria.jpg);
 }
 
 #conteneur .content_box a.image:hover {
@@ -2154,47 +1987,47 @@ h5 {
 }
 
 .nav-elem.nav-1 {
-    background-image: url("../img/projects/index-logo-menu-gas.jpg");
+    background-image: url("../img/projects/showcase-page/side-nav/gas.jpg");
 }
 
 .nav-elem.nav-2 {
-    background-image: url("../img/projects/index-logo-menu-mavcom.jpg");
+    background-image: url("../img/projects/showcase-page/side-nav/mavcom.jpg");
 }
 
 .nav-elem.nav-3 {
-    background-image: url("../img/projects/index-logo-menu-firstclasse.jpg");
+    background-image: url("../img/projects/showcase-page/side-nav/firstclasse.jpg");
 }
 
 .nav-elem.nav-4 {
-    background-image: url("../img/projects/index-logo-menu-privasia.jpg");
+    background-image: url("../img/projects/showcase-page/side-nav/privasia.jpg");
 }
 
 .nav-elem.nav-5 {
-    background-image: url("../img/projects/index-logo-menu-fashion.jpg");
+    background-image: url("../img/projects/showcase-page/side-nav/fashionvalet.jpg");
 }
 
 .nav-elem.nav-6 {
-    background-image: url("../img/projects/index-logo-menu-fobo.jpg")
+    background-image: url("../img/projects/showcase-page/side-nav/fobo.jpg")
 }
 
 .nav-elem.nav-7 {
-    background-image: url("../img/projects/index-logo-menu-maybank.jpg");
+    background-image: url("../img/projects/showcase-page/side-nav/maybank.jpg");
 }
 
 .nav-elem.nav-8 {
-    background-image: url("../img/projects/index-logo-menu-jr.jpg");
+    background-image: url("../img/projects/showcase-page/side-nav/jr.jpg");
 }
 
 .nav-elem.nav-9 {
-    background-image: url("../img/projects/index-logo-menu-epilepsy.jpg");
+    background-image: url("../img/projects/showcase-page/side-nav/privasia.jpg");
 }
 
 .nav-elem.nav-10 {
-    background-image: url("../img/projects/index-logo-menu-kingdom.jpg");
+    background-image: url("../img/projects/showcase-page/side-nav/kingdomcity.jpg");
 }
 
 .nav-elem.nav-11 {
-    background-image: url("../img/projects/index-logo-menu-seagames.jpg");
+    background-image: url("../img/projects/showcase-page/side-nav/seagames.jpg");
 }
 
 .nav-elem.nav-12 {
@@ -2330,7 +2163,6 @@ h5 {
     display: flex;
     min-height: 80px;
     margin-top: 8px;
-    height: 60%;
 }
 
 .firstWorkInfoSection {
@@ -2567,10 +2399,14 @@ h5 {
     border-radius: 50%;
 }
 
+.bg-videos {
+    overflow: hidden;
+}
 .bg-videos video {
-    object-fit: fill;
-    width: 100%;
-    height: auto;
+    height: 100%;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
 }
 
 /* Chrome, Safari and Opera syntax */
@@ -2700,7 +2536,16 @@ h5 {
     color: #fff;
     font-size: 1.3rem;
     cursor: pointer;
-    z-index: 201
+    z-index: 100000;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    -o-animation: fadein 2s;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
@@ -2828,6 +2673,11 @@ h5 {
 /* ==========================================================================
     #Small Screens
 ========================================================================== */
+@media only screen and (max-width: 640px) {
+    .bg-videos video{
+        display: none;
+    }
+}
 @media only screen and (max-width: 900px) {
     h1 {
         font-size: 28px;
@@ -3101,55 +2951,54 @@ h5 {
         min-height: 400px;
         min-width: 320px;
     }
-
-    #firstSection {
+    .section {
         background-position: top center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url("../img/projects/index-bg-gas-mobile.jpg");
+    }
+    #pruSection {
+        background-image: url("../img/projects/showcase-page/main/prudential-mobile.jpg");
+        background-position: top center ;
     }
 
-    #secondSection {
-        background-position: top center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url("../img/projects/index-bg-mavcom-mobile.jpg");
+    #anycubedSection {
+        background-position: top right;
+        background-image: url("../img/projects/showcase-page/main/anycubed-mobile.jpg");
     }
 
-    #thirdSection {
-        background-position: top center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url("../img/index-bg-firstclasse-mobile.jpg");
+    #sseSection {
+        background-position: top right;
+        background-image: url("../img/projects/showcase-page/main/sse-mobile.jpg");
     }
 
-    #fourthSection {
-        background-position: top center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url("../img/index-bg-privasia-mobile.jpg");
+    #lgSection {
+        background-image: url("../img/projects/showcase-page/main/lg-mobile.jpg");
+    }
+    
+    #sgSection {
+        background-image: url("../img/projects/showcase-page/main/sea-mobile.jpg");
     }
 
-    /*
-#firstSection #promise {
-    margin: 20px 30px 0px 30px;
-    opacity: 0;
-}
-*/
+    #wilmarSection {
+        background-position: top left;
+        background-image: url("../img/projects/showcase-page/main/wilmar-mobile.jpg");
+    }
+    
+    #gasSection {
+        background-position: top right;
+        background-image: url("../img/projects/showcase-page/main/gas-mobile.jpg");
+    }
 
+    #mavcomSection {
+        background-image: url("../img/projects/showcase-page/main/mavcom-mobile.jpg");
+    }
 
-    /*
-#firstSection h2 {
-    font-size: 24pt;
-    line-height: 28pt;
-}
-*/
+    #fcSection {
+        background-image: url("../img/projects/showcase-page/main/firstclasse-mobile.jpg");
+    }
 
-    @media all and (max-width: 480px) {
-        #firstSection h2 {
-            font-size: 16pt;
-            line-height: 22pt;
-        }
+    #privasiaSection {
+        background-image: url("../img/projects/showcase-page/main/privasia-mobile.jpg");
     }
 
     #secondSection {
@@ -3165,34 +3014,15 @@ h5 {
         display: none;
     }
 
-    /*
-#sectionContact .officeBlock {
-	width: 80%;
-	height: 120px;
-	text-align: center;
-	vertical-align: middle;
-	margin: 3px 0px;
-}
-#sectionContact .officeBlock h1 {
-	font-size: 14pt;
-	margin-top: 40px;
-	line-height: 14pt;
-	margin-bottom: 0px;
-}
-#sectionContact .officeBlock h2 {
-	font-size: 14pt;
-	margin-top: 0px;
-}
-#sectionContact #officeChicago {
-	background-image: url('../img/locations/night_chicago.jpg');
-}
-#sectionContact #officeLosAngeles {
-	background-image: url('../img/locations/night_la.jpg');
-}
-#sectionContact #officeSeattle {
-	background-image: url('../img/locations/night_seattle.jpg');
-}
-*/
+    .firstWorkInfoSection .headingoverview {
+        width: auto;
+        left: auto;
+    }
+    .firstWorkInfoSection .textoverview {
+        left: auto;
+        width: 80%;
+        line-height: 17px;
+    }
 
     #secondSection #footer {
         /*	height: 410px;*/
@@ -3239,9 +3069,25 @@ h5 {
     }
 
     .sectionDescription {
-        height: 45%;
         z-index: 2 !important;
         bottom: 0px;
+        margin-bottom: 35px;
+        height: auto;
+    }
+
+    .sectionDescription .logo,
+    .sectionDescription .title,
+    .sectionDescription .videoButton {
+        will-change: auto;
+        transform: none;
+    }
+    .sectionDescription .logo {
+        background-color: rgba(0,0,0,0.35);
+        border-radius: 25px;
+    }
+
+    .sectionDescription .firsLine {
+        height: auto;
     }
 
     .sectionDescription .WorkInfoMeta {
@@ -3249,12 +3095,16 @@ h5 {
     }
 
     .sectionDescription .firsLine {
-        margin: 0px;
+        margin: 20px 0px;
         width: 100%;
+    }
+    .sectionDescription .firsLine .WorkInfoMeta{
+        margin: 20px 0px;
     }
 
     .sectionDescription .title {
-        margin-top: 0px;
+        display: block;
+        margin: 20px 0;
     }
 
     .sectionDescription .logo {
@@ -3270,15 +3120,23 @@ h5 {
     .sectionDescription .title .inner {
         font-size: 25px;
         font-weight: 600;
+        max-width: 80%;
+        margin: 0 auto;
     }
 
+    .sectionDescription .videoButton .directButton::before {
+        display: none;
+    }
+    .sectionDescription .videoButton .directButton:hover {
+        background-color: white;
+    }
     .sectionDescription .videoButton .directButton {
-        margin-top: 0px;
+        position: static;
+        padding: 10px 20px;
     }
 
     .firstWorkInfoSection {
-        margin-left: -65px;
-        width: 105%;
+        width: 100%;
     }
 
     .secondWorkInfoSection {
@@ -3288,49 +3146,55 @@ h5 {
     .firstWorkInfoSection .textoverview {
         font-size: 11px;
         line-height: 15px;
-        margin-top: 20px;
     }
 
     .firstWorkInfoSection .headingoverview {
         font-size: 10px;
-        top: 55px;
+        top: 35px;
     }
 
     .bg-videos {
         display: none;
     }
+    
+    @media all and (max-width: 480px) {
+        #firstSection h2 {
+            font-size: 16pt;
+            line-height: 22pt;
+        }
+    }
 
     @media only screen and (orientation: portrait) {
         #conteneur .content_box a.image.number1 {
-            background-image: url(../img/index-bg-fashion-mobile.jpg);
+            background-image: url(../img/projects/showcase-page/collections/fashionvalet-mobile.jpg);
         }
 
         #conteneur .content_box a.image.number2 {
-            background-image: url(../img/index-bg-fobo-mobile.jpg);
+            background-image: url(../img/projects/showcase-page/collections/fobo-mobile.jpg);
         }
 
         #conteneur .content_box a.image.number3 {
-            background-image: url(../img/index-bg-maybank-mobile.jpg);
+            background-image: url(../img/projects/showcase-page/collections/maybank-mobile.jpg);
         }
 
         #conteneur .content_box a.image.number4 {
-            background-image: url(../img/index-bg-jr-mobile.jpg);
+            background-image: url(../img/projects/showcase-page/collections/jr-mobile.jpg);
         }
 
         #conteneur .content_box a.image.number5 {
-            background-image: url(../img/index-bg-epilepsy-mobile.jpg);
+            background-image: url(../img/projects/showcase-page/collections/epilepsy-mobile.jpg);
         }
 
         #conteneur .content_box a.image.number6 {
-            background-image: url(../img/index-bg-kingdom.jpg);
+            background-image: url(../img/projects/showcase-page/collections/kingdom.jpg);
         }
 
         #conteneur .content_box a.image.number7 {
-            background-image: url(../img/index-bg-lg-mobile.jpg);
+            background-image: url(../img/projects/showcase-page/collections/syrian-motors.jpg);
         }
 
         #conteneur .content_box a.image.number8 {
-            background-image: url(../img/index-bg-sea.jpg);
+            background-image: url(../img/projects/showcase-page/collections/aqarat-syria.jpg);
         }
     }
 
@@ -3339,37 +3203,37 @@ h5 {
     /*On Hover Logos*/
 
     #conteneur .content_box a .fashion {
-        background: url(../img/index-logo-hover-fashion-mobile.png) no-repeat center center transparent;
+        background: url(../img/projects/logos/fashionvalet-mobile.png) no-repeat center center transparent;
         background-size: 130%;
     }
 
     #conteneur .content_box a .maybank {
-        background: url(../img/index-logo-hover-maybank-mobile.png) no-repeat center center transparent;
+        background: url(../img/projects/logos/maybank-mobile.png) no-repeat center center transparent;
         background-size: 85%;
     }
 
     #conteneur .content_box a .fobo {
-        background: url(../img/index-logo-hover-fobo-mobile.png) no-repeat center center transparent;
+        background: url(../img/projects/logos/fobo-mobile.png) no-repeat center center transparent;
     }
 
     #conteneur .content_box a .jr {
-        background: url(../img/index-logo-hover-jr-mobile.png) no-repeat center center transparent;
+        background: url(../img/projects/logos/jr-mobile.png) no-repeat center center transparent;
         background-size: 90%;
     }
 
     #conteneur .content_box a .kingdom {
-        background: url(../img/index-logo-hover-kingdom.png) no-repeat center center transparent;
+        background: url(../img/projects/logos/kingdom.png) no-repeat center center transparent;
         background-size: 120%;
     }
 
+    #conteneur .content_box a .epilepsy {
+        background: url(../img/projects/logos/epilepsy-mobile.png) no-repeat center center transparent;
+        background-size: 130%;
+    }
+    
     #conteneur .content_box a .lg {
         background: url(../img/index-logo-hover-lg.png) no-repeat center center transparent;
         background-size: 110%;
-    }
-
-    #conteneur .content_box a .epilepsy {
-        background: url(../img/index-logo-hover-epilepsy-mobile.png) no-repeat center center transparent;
-        background-size: 130%;
     }
 
     #conteneur .content_box a .seagames {
@@ -3413,84 +3277,8 @@ h5 {
 
     #sidebar-wrapper.active {
         width: 100%;
+        z-index: 9999;
     }
-
-    /*TESTINGGG*/
-
-
-    /*
-
-html,
-body {
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: #000;
-}
-.mask {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-    width: 100% !important;
-    overflow: hidden;
-}
-.mask img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.tilt-bar {
-    position: fixed;
-    bottom: 30px;
-    left: 10px;
-    right: 10px;
-    height: 1px;
-    z-index: 1;
-    background-color: rgba(255, 255, 255, 0.3);
-}
-.tilt-indicator {
-    background-color: rgba(255, 255, 255, 0.8);
-    height: 1px;
-    position: absolute;
-}
-.mask img,
-.tilt-indicator {
-    -webkit-transition: -webkit-transform 0.2s linear;
-    -moz-transition: -moz-transform 0.2s linear;
-    -ms-transition: -ms-transform 0.2s linear;
-    transition: transform 0.2s linear;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    -moz-perspective: 1000;
-    -ms-perspective: 1000;
-    perspective: 1000;
-    -webkit-transform: translatez(0);
-    -moz-transform: translatez(0);
-    -ms-transform: translatez(0);
-    transform: translatez(0);
-}
-.mask img,
-.tilt-indicator {
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    transition: none;
-}
-.is-resizing {
-    visibility: hidden;
-}*/
-
     #maximize {
         font-family: initial;
         font-size: 13px;
@@ -3501,4 +3289,14 @@ body {
         font-size: 12px;
         margin-left: 2px;
     }
+}
+
+/* NAVBAR Custom Styling */
+a.navbar-brand {
+    text-transform: none;
+    font-weight: 400;
+    text-shadow: 1px 1px #000;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+    text-shadow: 1px 1px #000;
 }

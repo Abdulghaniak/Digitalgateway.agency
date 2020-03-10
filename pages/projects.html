@@ -28,8 +28,9 @@
     <meta property="og:image" content="http://abdulghaniakhras.com/src/img/resume-bg-main3.jpg">
 
     <title>Abdulghani Akhras</title>
-    <link rel="stylesheet" href="../vendor/animate/css/animate.min.css">
-    <link rel="stylesheet" href="../vendor/normalize/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/projects.css">
     <link rel="stylesheet" href="../css/common.css">
     <script src="../vendor/modernizr/js/modernizr-2.8.3.min.js" style="color: rgb(34, 34, 34);"></script>
@@ -53,29 +54,302 @@
             </div>
         </div>
     </div>
-    <div class="pace  pace-inactive">
-        <div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
-            <div class="pace-progress-inner"></div>
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="/index.html"><img src="../img/logos/global-nav-logo.png"
+                    class="nav-logo" />
+                <span class="nav-text">Digital Gateway</span>
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="./services.html">Services</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link js-scroll-trigger" href="./projects.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="pace-activity"></div>
-    </div>
+    </nav>
+    <!-- END - NAVIGATION -->
+
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <!--<div id="temp" style="-webkit-transform: scale( 0.2 )">-->
     <div id="fullPage" style="height: 1364px; transform: translate(0px, 0px);">
-        <!-- INTRO -->
-        <div class="section" id="firstSection"
+        <!-- Prudential - Start -->
+        <div class="section" id="pruSection"
             style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
-            <div id="gasVid" class="bg-videos firstVideo">
-                <video id="gasBGVideo" class="bg-video" autoplay loop muted playsinline srcdesk="../videos/video.mp4"
-                    srcmob="../videos/video-mobile.mp4">
-                    <source src="../videos/projects/gas.mp4">
+            <div id="pruVid" class="bg-videos">
+                <video id="pruBGVideo" class="bg-video" autoplay loop muted playsinline>
+                    <source data-src="../videos/projects/prudential.mp4">
                 </video>
             </div>
             <div class="sectionDescription">
                 <div class="firsLine">
-                    <div class="logo" style="background-image: url('../img/projects/index-logo-gas.png');"></div>
+                    <div class="logo" style="background-image: url('../img/projects/logos/prudential.png');"></div>
+
+                    <div class="WorkInfoMeta">
+                        <div class="title">
+                            <div class="inner">Prudential Financial</div>
+                        </div>
+                        <div class="videoButton">
+                            <a class="directButton" href="projects/gas.htm">Showcase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sections">
+                    <div class="firstWorkInfoSection">
+                        <div class="headingoverview">OVERVIEW</div>
+                        <div class="textoverview">Gas Malaysia provides clean, efficient and stable supply of Natural
+                            Gas and Liquefied Petroleum Gas to homes, commercial businesses and industries. Their energy
+                            solutions include power generation system with heat recovery such as Combined Heat & Power
+                            and alternative gas distribution such as virtual pipeline.</div>
+                    </div>
+                    <div class="secondWorkInfoSection">
+                        <div class="headingoverview">TECH</div>
+                        <div class="textoverview">Building an application to geospatially map and visualize customer’s
+                            different types of data sets, with an overlaid existing pipeline data and visual drawing of
+                            proposed pipeline to estimate potential customer’s infrastructure investment cost,
+                            construction timeline and calculate Internal Rate of Return (IRR) on the go.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Prudential - End -->
+        <!-- Anycubed - Start -->
+        <div class="section" id="anycubedSection"
+            style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
+            <div id="anycubedVid" class="bg-videos">
+                <video id="anycubedBGVideo" class="bg-video" autoplay loop muted playsinline
+                    srcdesk="../videos/video.mp4" srcmob="../videos/video-mobile.mp4">
+                    <source data-src="../videos/projects/anycubed.mp4">
+                </video>
+            </div>
+            <div class="sectionDescription">
+                <div class="firsLine">
+                    <div class="logo" style="background-image: url('../img/projects/logos/anycubed.png');"></div>
+
+                    <div class="WorkInfoMeta">
+                        <div class="title">
+                            <div class="inner">Anycubed Project</div>
+                        </div>
+                        <div class="videoButton">
+                            <a class="directButton" href="projects/gas.htm">Showcase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sections">
+                    <div class="firstWorkInfoSection">
+                        <div class="headingoverview">OVERVIEW</div>
+                        <div class="textoverview">Gas Malaysia provides clean, efficient and stable supply of Natural
+                            Gas and Liquefied Petroleum Gas to homes, commercial businesses and industries. Their energy
+                            solutions include power generation system with heat recovery such as Combined Heat & Power
+                            and alternative gas distribution such as virtual pipeline.</div>
+                    </div>
+                    <div class="secondWorkInfoSection">
+                        <div class="headingoverview">TECH</div>
+                        <div class="textoverview">Building an application to geospatially map and visualize customer’s
+                            different types of data sets, with an overlaid existing pipeline data and visual drawing of
+                            proposed pipeline to estimate potential customer’s infrastructure investment cost,
+                            construction timeline and calculate Internal Rate of Return (IRR) on the go.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Anycubed - End -->
+        <!-- SSE - Start -->
+        <div class="section" id="sseSection"
+            style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
+            <div id="sseVid" class="bg-videos">
+                <video id="sseBGVideo" class="bg-video" autoplay loop muted playsinline>
+                    <source data-src="../videos/projects/sse.mp4">
+                </video>
+            </div>
+            <div class="sectionDescription">
+                <div class="firsLine">
+                    <div class="logo" style="background-image: url('../img/projects/logos/sse.png');"></div>
+
+                    <div class="WorkInfoMeta">
+                        <div class="title">
+                            <div class="inner">SSE Airtricity</div>
+                        </div>
+                        <div class="videoButton">
+                            <a class="directButton" href="projects/gas.htm">Showcase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sections">
+                    <div class="firstWorkInfoSection">
+                        <div class="headingoverview">OVERVIEW</div>
+                        <div class="textoverview">Gas Malaysia provides clean, efficient and stable supply of Natural
+                            Gas and Liquefied Petroleum Gas to homes, commercial businesses and industries. Their energy
+                            solutions include power generation system with heat recovery such as Combined Heat & Power
+                            and alternative gas distribution such as virtual pipeline.</div>
+                    </div>
+                    <div class="secondWorkInfoSection">
+                        <div class="headingoverview">TECH</div>
+                        <div class="textoverview">Building an application to geospatially map and visualize customer’s
+                            different types of data sets, with an overlaid existing pipeline data and visual drawing of
+                            proposed pipeline to estimate potential customer’s infrastructure investment cost,
+                            construction timeline and calculate Internal Rate of Return (IRR) on the go.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SSE - End -->
+        <!-- LG / Prasarana - Start -->
+        <div class="section" id="lgSection"
+            style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
+            <div id="lgVid" class="bg-videos">
+                <video id="lgBGVideo" class="bg-video" autoplay loop muted playsinline srcdesk="../videos/video.mp4"
+                    srcmob="../videos/video-mobile.mp4">
+                    <source data-src="../videos/projects/lg.mp4">
+                </video>
+            </div>
+            <div class="sectionDescription">
+                <div class="firsLine">
+                    <div class="logo" style="background-image: url('../img/projects/logos/lg.png');"></div>
+
+                    <div class="WorkInfoMeta">
+                        <div class="title">
+                            <div class="inner">Journey Planner</div>
+                        </div>
+                        <div class="videoButton">
+                            <a class="directButton" href="projects/gas.htm">Showcase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sections">
+                    <div class="firstWorkInfoSection">
+                        <div class="headingoverview">OVERVIEW</div>
+                        <div class="textoverview">Gas Malaysia provides clean, efficient and stable supply of Natural
+                            Gas and Liquefied Petroleum Gas to homes, commercial businesses and industries. Their energy
+                            solutions include power generation system with heat recovery such as Combined Heat & Power
+                            and alternative gas distribution such as virtual pipeline.</div>
+                    </div>
+                    <div class="secondWorkInfoSection">
+                        <div class="headingoverview">TECH</div>
+                        <div class="textoverview">Building an application to geospatially map and visualize customer’s
+                            different types of data sets, with an overlaid existing pipeline data and visual drawing of
+                            proposed pipeline to estimate potential customer’s infrastructure investment cost,
+                            construction timeline and calculate Internal Rate of Return (IRR) on the go.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- LG / Prasarana - End -->
+        <!-- Sea Games - Start -->
+        <div class="section" id="sgSection"
+            style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
+            <div id="sgVid" class="bg-videos">
+                <video id="sgBGVideo" class="bg-video" autoplay loop muted playsinline srcdesk="../videos/video.mp4"
+                    srcmob="../videos/video-mobile.mp4">
+                    <source data-src="../videos/projects/seagames.mp4">
+                </video>
+            </div>
+            <div class="sectionDescription">
+                <div class="firsLine">
+                    <div class="logo" style="background-image: url('../img/projects/logos/sea-games.png');"></div>
+
+                    <div class="WorkInfoMeta">
+                        <div class="title">
+                            <div class="inner">Sea Games Mobile & Web App</div>
+                        </div>
+                        <div class="videoButton">
+                            <a class="directButton" href="projects/gas.htm">Showcase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sections">
+                    <div class="firstWorkInfoSection">
+                        <div class="headingoverview">OVERVIEW</div>
+                        <div class="textoverview">Gas Malaysia provides clean, efficient and stable supply of Natural
+                            Gas and Liquefied Petroleum Gas to homes, commercial businesses and industries. Their energy
+                            solutions include power generation system with heat recovery such as Combined Heat & Power
+                            and alternative gas distribution such as virtual pipeline.</div>
+                    </div>
+                    <div class="secondWorkInfoSection">
+                        <div class="headingoverview">TECH</div>
+                        <div class="textoverview">Building an application to geospatially map and visualize customer’s
+                            different types of data sets, with an overlaid existing pipeline data and visual drawing of
+                            proposed pipeline to estimate potential customer’s infrastructure investment cost,
+                            construction timeline and calculate Internal Rate of Return (IRR) on the go.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sea Games - End -->
+        <!-- Wilmar - Start -->
+        <div class="section" id="wilmarSection"
+            style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
+            <div id="wilmarVid" class="bg-videos">
+                <video id="wilmarBGVideo" class="bg-video" autoplay loop muted playsinline srcdesk="../videos/video.mp4"
+                    srcmob="../videos/video-mobile.mp4">
+                    <source data-src="../videos/projects/wilmar.mp4">
+                </video>
+            </div>
+            <div class="sectionDescription">
+                <div class="firsLine">
+                    <div class="logo" style="background-image: url('../img/projects/logos/wilmar.png');"></div>
+
+                    <div class="WorkInfoMeta">
+                        <div class="title">
+                            <div class="inner">Wilmar International</div>
+                        </div>
+                        <div class="videoButton">
+                            <a class="directButton" href="projects/gas.htm">Showcase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sections">
+                    <div class="firstWorkInfoSection">
+                        <div class="headingoverview">OVERVIEW</div>
+                        <div class="textoverview">Gas Malaysia provides clean, efficient and stable supply of Natural
+                            Gas and Liquefied Petroleum Gas to homes, commercial businesses and industries. Their energy
+                            solutions include power generation system with heat recovery such as Combined Heat & Power
+                            and alternative gas distribution such as virtual pipeline.</div>
+                    </div>
+                    <div class="secondWorkInfoSection">
+                        <div class="headingoverview">TECH</div>
+                        <div class="textoverview">Building an application to geospatially map and visualize customer’s
+                            different types of data sets, with an overlaid existing pipeline data and visual drawing of
+                            proposed pipeline to estimate potential customer’s infrastructure investment cost,
+                            construction timeline and calculate Internal Rate of Return (IRR) on the go.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Wilmar - End -->
+        <!-- Gas Malaysia - Start -->
+        <div class="section" id="gasSection"
+            style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
+            <div id="gasVid" class="bg-videos">
+                <video id="gasBGVideo" class="bg-video" autoplay loop muted playsinline srcdesk="../videos/video.mp4"
+                    srcmob="../videos/video-mobile.mp4">
+                    <source data-src="../videos/projects/gas.mp4">
+                </video>
+            </div>
+            <div class="sectionDescription">
+                <div class="firsLine">
+                    <div class="logo" style="background-image: url('../img/projects/logos/gas.png');"></div>
 
                     <div class="WorkInfoMeta">
                         <div class="title">
@@ -104,17 +378,19 @@
                 </div>
             </div>
         </div>
-        <div class="section" id="secondSection"
+        <!-- Gas Malaysia - End -->
+        <!-- Mavcom - Start -->
+        <div class="section" id="mavcomSection"
             style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
             <div id="mavcomVid" class="bg-videos">
                 <video id="mavcomBGVideo" class="bg-video" autoplay loop muted playsinline srcdesk="../videos/video.mp4"
                     srcmob="../videos/video-mobile.mp4">
-                    <source src="../videos/projects/mavcom.mp4">
+                    <source data-src="../videos/projects/mavcom.mp4">
                 </video>
             </div>
             <div class="sectionDescription">
                 <div class="firsLine">
-                    <div class="logo" style="background-image: url('../img/projects/index-logo-mavcom.png');"></div>
+                    <div class="logo" style="background-image: url('../img/projects/logos/mavcom.png');"></div>
 
                     <div class="WorkInfoMeta" style="">
                         <div class="title">
@@ -143,17 +419,19 @@
                 </div>
             </div>
         </div>
-        <div class="section" id="thirdSection"
+        <!-- Mavcom - End -->
+        <!-- FirstClasse - Start -->
+        <div class="section" id="fcSection"
             style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
             <div id="fcVid" class="bg-videos">
                 <video id="fcBGVideo" class="bg-video" autoplay loop muted playsinline srcdesk="../videos/video.mp4"
                     srcmob="../videos/video-mobile.mp4">
-                    <source src="../videos/projects/firstclasse.mp4">
+                    <source data-src="../videos/projects/firstclasse.mp4">
                 </video>
             </div>
             <div class="sectionDescription">
                 <div class="firsLine">
-                    <div class="logo" style="background-image: url('../img/projects/index-logo-firstclasse.png');">
+                    <div class="logo" style="background-image: url('../img/projects/logos/firstclasse.png');">
                     </div>
 
                     <div class="WorkInfoMeta" style="">
@@ -192,17 +470,19 @@
                 </div>
             </div>
         </div>
-        <div class="section" id="fourthSection"
+        <!-- FirstClasse - End -->
+        <!-- Privasia - Start -->
+        <div class="section" id="privasiaSection"
             style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
             <div id="privasiaVid" class="bg-videos">
                 <video id="privasiaBGVideo" class="bg-video" autoplay loop muted playsinline
                     srcdesk="../videos/video.mp4" srcmob="../videos/video-mobile.mp4">
-                    <source src="../videos/projects/privasia.mp4">
+                    <source data-src="../videos/projects/privasia.mp4">
                 </video>
             </div>
             <div class="sectionDescription">
                 <div class="firsLine">
-                    <div class="logo" style="background-image: url('../img/projects/index-logo-privasia.png');"></div>
+                    <div class="logo" style="background-image: url('../img/projects/logos/privasia.png');"></div>
 
                     <div class="WorkInfoMeta" style="">
                         <div class="title">
@@ -241,7 +521,9 @@
             </div>
             <!-- put in the css display:none if you want to hide the icon-->
         </div>
-        <div class="section" id="fifthSection"
+        <!-- Privasia - End -->
+        <!-- Collection 1 - Start -->
+        <div class="section" id="col1Section"
             style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
             <div id="conteneur">
                 <div class="content_box"><a href="projects/fashionvalet.htm" class="image number1"><span
@@ -254,18 +536,34 @@
                             class="image_sup jr"></span></a></div>
             </div>
         </div>
-        <div class="section" id="sixthSection"
+        <!-- Collection 1 - End -->
+        <!-- Collection 2 - Start -->
+        <div class="section" id="col2Section"
             style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
             <div id="conteneur">
-                <div class="content_box"><a href="projects/epilepsy.htm" class="image number5"><span
-                            class="image_sup epilepsy"></span></a></div>
-                <div class="content_box"><a href="projects/kingdomcity.htm" class="image number6"><span
-                            class="image_sup kingdom"></span></a></div>
-                <div class="content_box" style=""><a class="image number7" style=""><span
-                            class="image_sup lg"></span></a></div>
-                <div class="content_box"><a class="image number8"><span class="image_sup seagames"></span></a></div>
+                <div class="content_box">
+                    <a href="projects/epilepsy.htm" class="image number5">
+                        <span class="image_sup epilepsy"></span>
+                    </a>
+                </div>
+                <div class="content_box">
+                    <a href="projects/kingdomcity.htm" class="image number6">
+                        <span class="image_sup kingdom"></span>
+                    </a>
+                </div>
+                <div class="content_box">
+                    <a class="image number7">
+                        <span class="image_sup syr-motors"></span>
+                    </a>
+                </div>
+                <div class="content_box">
+                    <a class="image number8">
+                        <span class="image_sup aqarat-syr"></span>
+                    </a>
+                </div>
             </div>
         </div>
+        <!-- Collection 2 - End -->
     </div>
     <!-- End of fullpage -->
 
@@ -327,16 +625,15 @@
     <div id="scrollDummy"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../vendor/jquery/jquery.address-1.6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
     <script src="../vendor/animate/js/requestAnimFrame.js"></script>
     <script src="../vendor/jquery/jquery.transit.js"></script>
-    <script src="../vendor/moment/js/moment.min.js"></script>
-    <script src="../vendor/moment/js/moment-timezone-with-data-2010-2020.min.js"></script>
-    <script src="../vendor/fastclick/fastclick.js"></script>
     <script src="../vendor/jqwidont/jqwidont.min.js"></script>
     <script src="../vendor/plugins/plugins.js"></script>
     <script src="../js/projects.js"></script>
-    <script src="../vendor/pace/js/pace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -359,7 +656,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
 
-            //             Open the Sidebar-wrapper on Hover
+            // Open the Sidebar-wrapper on Hover
             if ($(window).width() > 736) {
                 $("#menu-toggle").hover(function (e) //declare the element event ...'(e)' = event (shorthand)
                     {
