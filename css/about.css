@@ -3237,14 +3237,9 @@
     padding: 50px 0px;
 }
 
-.stats-col:nth-child(even) {
+/* .stats-col:nth-child(even) {
     background: var(--black-shade-4);
-}
-
-.stats-col:nth-child(odd) {
-    background: var(--primary-dark-3);
-    /* background: var(--black-shade-5); */
-}
+} */
 
 .stats-col i {
     font-size: 50px;
@@ -3277,7 +3272,7 @@
 
 @media (min-width: 900px) {
     .stats-section {
-        margin: 50px 0 60px 0;
+        margin: 50px auto 60px auto;
     }
 
     .stats-section .section-header h2::after {

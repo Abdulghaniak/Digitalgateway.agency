@@ -359,7 +359,8 @@ header#header ul li a {
   font-size: 20px;
 }
 header#header ul li a:hover {
-  opacity: 0.7;
+  color: #ccc;
+  text-decoration: none;
 }
 header#header.blacked {
   color: #000;

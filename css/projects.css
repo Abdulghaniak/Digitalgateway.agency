@@ -1986,52 +1986,68 @@ h5 {
     background: transparent;
 }
 
-.nav-elem.nav-1 {
-    background-image: url("../img/projects/showcase-page/side-nav/gas.jpg");
+.nav-elem.prudential {
+    background-image: url("../img/projects/showcase-page/side-nav/prudential.jpg");
 }
 
-.nav-elem.nav-2 {
-    background-image: url("../img/projects/showcase-page/side-nav/mavcom.jpg");
+.nav-elem.anycubed {
+    background-image: url("../img/projects/showcase-page/side-nav/anycubed.jpg");
 }
 
-.nav-elem.nav-3 {
-    background-image: url("../img/projects/showcase-page/side-nav/firstclasse.jpg");
+.nav-elem.sse {
+    background-image: url("../img/projects/showcase-page/side-nav/sse.jpg");
 }
 
-.nav-elem.nav-4 {
-    background-image: url("../img/projects/showcase-page/side-nav/privasia.jpg");
+.nav-elem.lg {
+    background-image: url("../img/projects/showcase-page/side-nav/lg.jpg");
 }
 
-.nav-elem.nav-5 {
-    background-image: url("../img/projects/showcase-page/side-nav/fashionvalet.jpg");
-}
-
-.nav-elem.nav-6 {
-    background-image: url("../img/projects/showcase-page/side-nav/fobo.jpg")
-}
-
-.nav-elem.nav-7 {
-    background-image: url("../img/projects/showcase-page/side-nav/maybank.jpg");
-}
-
-.nav-elem.nav-8 {
-    background-image: url("../img/projects/showcase-page/side-nav/jr.jpg");
-}
-
-.nav-elem.nav-9 {
-    background-image: url("../img/projects/showcase-page/side-nav/privasia.jpg");
-}
-
-.nav-elem.nav-10 {
-    background-image: url("../img/projects/showcase-page/side-nav/kingdomcity.jpg");
-}
-
-.nav-elem.nav-11 {
+.nav-elem.sg {
     background-image: url("../img/projects/showcase-page/side-nav/seagames.jpg");
 }
 
-.nav-elem.nav-12 {
-    background-image: url("../img/projects/index-logo-menu-lg.jpg");
+.nav-elem.wilmar {
+    background-image: url("../img/projects/showcase-page/side-nav/wilmar.jpg");
+}
+
+.nav-elem.gas {
+    background-image: url("../img/projects/showcase-page/side-nav/gas.jpg");
+}
+
+.nav-elem.mavcom {
+    background-image: url("../img/projects/showcase-page/side-nav/mavcom.jpg");
+}
+
+.nav-elem.fc {
+    background-image: url("../img/projects/showcase-page/side-nav/firstclasse.jpg");
+}
+
+.nav-elem.privasia {
+    background-image: url("../img/projects/showcase-page/side-nav/privasia.jpg")
+}
+
+.nav-elem.fv {
+    background-image: url("../img/projects/showcase-page/side-nav/fashionvalet.jpg");
+}
+
+.nav-elem.fobo {
+    background-image: url("../img/projects/showcase-page/side-nav/fobo.jpg");
+}
+
+.nav-elem.maybank {
+    background-image: url("../img/projects/showcase-page/side-nav/maybank.jpg");
+}
+
+.nav-elem.jr {
+    background-image: url("../img/projects/showcase-page/side-nav/jr.jpg");
+}
+
+.nav-elem.epilepsy {
+    background-image: url("../img/projects/showcase-page/side-nav/epilepsy.jpg");
+}
+
+.nav-elem.kingdom {
+    background-image: url("../img/projects/showcase-page/side-nav/kingdomcity.jpg");
 }
 
 .sectionDescription {
@@ -2098,6 +2114,7 @@ h5 {
     font-size: 5px;
     margin-left: 25px
 }
+
 
 .sectionDescription .videoButton .directButton {
     position: absolute;
@@ -2291,6 +2308,16 @@ h5 {
 }
 
 @media only screen and (min-width: 960px) {
+    .sectionDescription .videoButton .directButton.black {
+        border: 1.5px solid #000;
+        color: #000;
+    }
+    .sectionDescription .videoButton .directButton.black:hover::before {
+            box-shadow: inset 0 0 0 10em #000;
+    }
+    .sectionDescription .videoButton .directButton.black:hover {
+        color: #fff;
+    }
     #secondSection .sectionDescription .title .inner {
         color: black;
         text-shadow: #bbc 1px 1px;
@@ -2873,7 +2900,9 @@ h5 {
 ========================================================================== */
 
 @media only screen and (max-width: 900px) {
-
+nav#mainNav {
+    background-color: rgba(0, 0, 0, 0.3);
+}
     document,
     body,
     .section,
@@ -2999,6 +3028,10 @@ h5 {
 
     #privasiaSection {
         background-image: url("../img/projects/showcase-page/main/privasia-mobile.jpg");
+    }
+
+    #conteneur .content_box a .image_sup.bg-logo-mobile {
+        background-size: 160px;
     }
 
     #secondSection {
