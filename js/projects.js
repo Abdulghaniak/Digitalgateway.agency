@@ -1,8 +1,5 @@
-$(function() {
-  //    setTimeout(function () {
-  //      $('.loading').fadeOut();
-  //    }, 1000);
-  $(window).bind('load', function() {
+$(function () {
+  $(window).bind('load', function () {
     $('.loading').fadeOut();
   });
 
@@ -31,7 +28,7 @@ $(function() {
     $('#fcSection'),
     $('#privasiaSection'),
     $('#col1Section'),
-    $('#col2Section')
+    $('#col2Section'),
   ];
 
   var _sectionIDs = [
@@ -46,7 +43,7 @@ $(function() {
     'firstclasse',
     'privasia',
     'collection1',
-    'collection2'
+    'collection2',
   ];
 
   var _sectionHeights = [];
@@ -113,7 +110,7 @@ $(function() {
     }
 
     //The Action to hide and view the Menu
-    $('#menuButton').click(function() {
+    $('#menuButton').click(function () {
       _forceShowMenu = !_forceShowMenu;
       showMenu(_forceShowMenu, true);
     });
@@ -121,13 +118,13 @@ $(function() {
     showMenu(false);
 
     //disable mobile scrolling
-    document.ontouchstart = function(e) {
+    document.ontouchstart = function (e) {
       if (_isMobile && !_isAndroid) {
         e.preventDefault();
       }
     };
 
-    document.ontouchmove = function(e) {
+    document.ontouchmove = function (e) {
       if (_isMobile && !_isAndroid) {
         e.preventDefault();
       }
@@ -135,7 +132,7 @@ $(function() {
 
     //scroll events (scrolling events)
     document.addEventListener('mousewheel', handleMouseWheel, {
-      passive: false
+      passive: false,
     });
 
     // $('body').on('mousewheel', handleMouseWheel);
@@ -144,12 +141,12 @@ $(function() {
       $(document).swipe({
         threshold: 20,
         excludedElements: '#sidebar-wrapper',
-        swipeStatus: handleSwipe
+        swipeStatus: handleSwipe,
       });
     }
 
     //arrow key navigation (you can add functions for each arrow)
-    $(document).keyup(function(e) {
+    $(document).keyup(function (e) {
       var targetSectionID = 0;
 
       switch (e.which) {
@@ -201,11 +198,11 @@ $(function() {
 
     onResize();
 
-    $(window).resize(function() {
+    $(window).resize(function () {
       onResize();
     });
 
-    $(window).on('orientationchange', function(event) {
+    $(window).on('orientationchange', function (event) {
       doOnOrientationChange();
     });
 
@@ -222,7 +219,7 @@ $(function() {
       sources[i].setAttribute('src', sources[i].getAttribute('data-src'));
     }
     const videos = document.querySelectorAll('video.bg-video');
-    videos.forEach(video => {
+    videos.forEach((video) => {
       // Loading the videos using videojs API to load
       video.load();
     });
@@ -254,7 +251,7 @@ $(function() {
     }
 
     $('#fullPage').css({
-      height: fullHeight
+      height: fullHeight,
     });
 
     var totalH = 0;
@@ -265,14 +262,14 @@ $(function() {
       _sections[i].css({
         y: totalH,
         width: w,
-        height: ht
+        height: ht,
       });
       totalH += ht;
     }
 
     _curY = _sectionTops[_curSectionIndex];
     $('#fullPage').css({
-      y: -_curY
+      y: -_curY,
     });
 
     if (w <= MOBILE_WIDTH) {
@@ -339,7 +336,7 @@ $(function() {
           clearTimeout(_bouncebackTimer);
           clearTimeout(_scrollTimer);
           _scrollDisabled = true;
-          _scrollTimer = setInterval(function() {
+          _scrollTimer = setInterval(function () {
             if (_scrollingAfterNavigation && _timeAfterNavigation < 1000) {
               _scrollingAfterNavigation = false;
               _timeAfterNavigation += 200;
@@ -358,11 +355,11 @@ $(function() {
         }
       } else {
         $('#scrollDummy').css({
-          y: _scrollPos
+          y: _scrollPos,
         });
 
         clearTimeout(_bouncebackTimer);
-        _bouncebackTimer = setTimeout(function() {
+        _bouncebackTimer = setTimeout(function () {
           bounceBack();
         }, 300);
       }
@@ -372,7 +369,7 @@ $(function() {
         clearTimeout(_bouncebackTimer);
         clearTimeout(_scrollTimer);
         _scrollDisabled = true;
-        _scrollTimer = setInterval(function() {
+        _scrollTimer = setInterval(function () {
           if (_scrollingAfterNavigation && _timeAfterNavigation < 1000) {
             _scrollingAfterNavigation = false;
             _timeAfterNavigation += 200;
@@ -393,7 +390,7 @@ $(function() {
   function bounceBack() {
     $('#scrollDummy').transitionStop(true, false);
     $('#scrollDummy').transition({
-      y: 0
+      y: 0,
     });
   }
 
@@ -467,11 +464,11 @@ $(function() {
         resetIntro(); // if the animation for the introduction words inded do it again
       }
     } else {
-      $(function() {
-        setTimeout(function() {
+      $(function () {
+        setTimeout(function () {
           $('.sectionDescription').css('display', 'block');
           $('.sectionDescription').addClass('animated fadeInUp');
-          setTimeout(function() {
+          setTimeout(function () {
             $('.sectionDescription').removeClass('animated fadeInUp');
           }, 800);
         }, 50);
@@ -590,16 +587,16 @@ $(function() {
     section
       .find('.content')
       .children()
-      .each(function() {
+      .each(function () {
         $(this).css({
           opacity: 0,
-          y: y
+          y: y,
         });
         $(this).transition({
           opacity: 1,
           y: 0,
           delay: CONTENT_FADE_DELAY + delay,
-          duration: CONTENT_FADE_DURATION
+          duration: CONTENT_FADE_DURATION,
         });
         delay += 100;
       });
@@ -613,7 +610,7 @@ $(function() {
     $('#fullPage').transition({
       y: -_curY,
       delay: 0,
-      complete: onSlideDone()
+      complete: onSlideDone(),
     });
   }
 
@@ -646,17 +643,17 @@ $(function() {
     //hamburger color
     if (bAnimate) {
       $('#menuButton .line').animate({
-        borderColor: menuColor
+        borderColor: menuColor,
       });
       $('#menuButton .line').animate({
-        backgroundColor: menuColor
+        backgroundColor: menuColor,
       });
     } else {
       $('#menuButton .line').css({
-        borderColor: menuColor
+        borderColor: menuColor,
       });
       $('#menuButton .line').css({
-        backgroundColor: menuColor
+        backgroundColor: menuColor,
       });
     }
   }
@@ -755,7 +752,7 @@ $(function() {
 });
 
 // Toggle Full Screen
-$('.loading').click(function() {
+$('.loading').click(function () {
   toggleFullScreen();
 });
 

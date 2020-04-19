@@ -1,6 +1,11 @@
 var isMobile = false; //initiate as false
-(function($) {
+(function ($) {
   'use strict'; // Start of use strict
+
+  // Remove Loading animation
+  $(window).bind('load', function () {
+    $('.loading').fadeOut();
+  });
 
   // device detection
   if (
@@ -19,7 +24,7 @@ var isMobile = false; //initiate as false
   // });
 
   // Collapse Navbar
-  var navbarCollapse = function() {
+  var navbarCollapse = function () {
     if ($('#mainNav').offset().top > 60) {
       $('#mainNav').addClass('navbar-shrink');
     } else {
@@ -32,10 +37,10 @@ var isMobile = false; //initiate as false
   $(window).scroll(navbarCollapse);
 
   // Hide navbar when modals trigger
-  $('.portfolio-modal').on('show.bs.modal', function(e) {
+  $('.portfolio-modal').on('show.bs.modal', function (e) {
     $('.navbar').addClass('d-none');
   });
-  $('.portfolio-modal').on('hidden.bs.modal', function(e) {
+  $('.portfolio-modal').on('hidden.bs.modal', function (e) {
     $('.navbar').removeClass('d-none');
   });
 

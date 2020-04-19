@@ -32,7 +32,8 @@
 }
 
 .hero-overlay p {
-  font-size: 22px;
+  font-size: 21.5px;
+  font-weight: 400;
 }
 .main-title {
   font-weight: bold;
@@ -54,6 +55,9 @@
   }
   .hero-overlay p {
     display: none;
+  }
+  #services .service-description {
+    padding: 0 30px;
   }
 }
 
@@ -106,6 +110,7 @@
 }
 
 #services .service-description ul.two-col li {
+  font-family: 'Gotu', sans-serif;
   list-style-position: inside;
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
