@@ -34,7 +34,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
 
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
@@ -64,14 +64,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/projects.css">
     <link rel="stylesheet" href="./css/common.css">
-    <script src="./vendor/modernizr/js/modernizr-2.8.3.min.js" style="color: rgb(34, 34, 34);"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" style="color: rgb(34, 34, 34);"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="src/img/favicon.png" type="image/x-icon">
-    <link rel="import" href="components/header.html">
 </head>
 
 <body class="pace-done">
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v6.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="104978131189298" theme_color="#0f89ca"
+        greeting_dialog_display="hide"
+        logged_in_greeting="Hi! How can we help? Tell us a bit of what your’re trying to accomplish."
+        logged_out_greeting="Hi! How can we help? Tell us a bit of what your’re trying to accomplish.">
+    </div>
+
     <div class="loading">
         <div class="loading-text">
             <span class="loading-text-words">L</span>
@@ -88,7 +113,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="/index.html"><img src="./img/logos/global-nav-logo.png"
+            <a class="navbar-brand js-scroll-trigger" href="/index"><img src="./img/logos/global-nav-logo.png"
                     class="nav-logo" />
                 <span class="nav-text">Digital Gateway</span>
             </a>
@@ -101,19 +126,19 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="./index.html">Home</a>
+                        <a class="nav-link js-scroll-trigger" href="./">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="./services.html">Services</a>
+                        <a class="nav-link js-scroll-trigger" href="./services">Services</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link js-scroll-trigger" href="./work.html">Work</a>
+                        <a class="nav-link js-scroll-trigger" href="./work">Work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="./about.html">About</a>
+                        <a class="nav-link js-scroll-trigger" href="./about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="./contact.html">Contact</a>
+                        <a class="nav-link js-scroll-trigger" href="./contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -124,7 +149,6 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <!--<div id="temp" style="-webkit-transform: scale( 0.2 )">-->
     <div id="fullPage" style="height: 1364px; transform: translate(0px, 0px);">
         <!-- Prudential - Start -->
         <div class="section" id="pruSection"
@@ -143,7 +167,7 @@
                             <div class="inner">Prudential Financial</div>
                         </div>
                         <div class="videoButton">
-                            <a class="directButton" href="./cases/prudential.html">Showcase</a>
+                            <a class="directButton" href="./cases/prudential">Showcase</a>
                         </div>
                     </div>
                 </div>
@@ -170,8 +194,7 @@
         <div class="section" id="anycubedSection"
             style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
             <div id="anycubedVid" class="bg-videos">
-                <video id="anycubedBGVideo" class="bg-video" autoplay loop muted playsinline
-                    srcdesk="./videos/video.mp4" srcmob="./videos/video-mobile.mp4">
+                <video id="anycubedBGVideo" class="bg-video" autoplay loop muted playsinline srcdesk="" srcmob="">
                     <source data-src="./videos/projects/anycubed.mp4">
                 </video>
             </div>
@@ -184,7 +207,7 @@
                             <div class="inner">Anycubed Project</div>
                         </div>
                         <div class="videoButton">
-                            <a class="directButton textShadow" href="./cases/anycubed.html">Showcase</a>
+                            <a class="directButton textShadow" href="./cases/anycubed">Showcase</a>
                         </div>
                     </div>
                 </div>
@@ -224,7 +247,7 @@
                             <div class="inner">SSE Airtricity</div>
                         </div>
                         <div class="videoButton">
-                            <a class="directButton" href="./cases/sse.html">Showcase</a>
+                            <a class="directButton" href="./cases/sse">Showcase</a>
                         </div>
                     </div>
                 </div>
@@ -251,8 +274,7 @@
         <div class="section" id="lgSection"
             style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
             <div id="lgVid" class="bg-videos">
-                <video id="lgBGVideo" class="bg-video" autoplay loop muted playsinline srcdesk="./videos/video.mp4"
-                    srcmob="./videos/video-mobile.mp4">
+                <video id="lgBGVideo" class="bg-video" autoplay loop muted playsinline srcdesk="" srcmob="">
                     <source data-src="./videos/projects/lg.mp4">
                 </video>
             </div>
@@ -265,7 +287,7 @@
                             <div class="inner">Journey Planner</div>
                         </div>
                         <div class="videoButton">
-                            <a class="directButton" href="./cases/lg.html">Showcase</a>
+                            <a class="directButton" href="./cases/lg">Showcase</a>
                         </div>
                     </div>
                 </div>
@@ -292,8 +314,7 @@
         <div class="section" id="sgSection"
             style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
             <div id="sgVid" class="bg-videos">
-                <video id="sgBGVideo" class="bg-video" autoplay loop muted playsinline srcdesk="./videos/video.mp4"
-                    srcmob="./videos/video-mobile.mp4">
+                <video id="sgBGVideo" class="bg-video" autoplay loop muted playsinline srcdesk="" srcmob="">
                     <source data-src="./videos/projects/seagames.mp4">
                 </video>
             </div>
@@ -306,7 +327,7 @@
                             <div class="inner">Sea Games Mobile & Web App</div>
                         </div>
                         <div class="videoButton">
-                            <a class="directButton" href="./cases/sea-games.html">Showcase</a>
+                            <a class="directButton" href="./cases/sea-games">Showcase</a>
                         </div>
                     </div>
                 </div>
@@ -333,8 +354,7 @@
         <div class="section" id="wilmarSection"
             style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
             <div id="wilmarVid" class="bg-videos">
-                <video id="wilmarBGVideo" class="bg-video" autoplay loop muted playsinline srcdesk="./videos/video.mp4"
-                    srcmob="./videos/video-mobile.mp4">
+                <video id="wilmarBGVideo" class="bg-video" autoplay loop muted playsinline srcdesk="" srcmob="">
                     <source data-src="./videos/projects/wilmar.mp4">
                 </video>
             </div>
@@ -347,7 +367,7 @@
                             <div class="inner">Wilmar International</div>
                         </div>
                         <div class="videoButton">
-                            <a class="directButton" href="./cases/wilmar.html">Showcase</a>
+                            <a class="directButton" href="./cases/wilmar">Showcase</a>
                         </div>
                     </div>
                 </div>
@@ -374,8 +394,7 @@
         <div class="section" id="gasSection"
             style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
             <div id="gasVid" class="bg-videos">
-                <video id="gasBGVideo" class="bg-video" autoplay loop muted playsinline srcdesk="./videos/video.mp4"
-                    srcmob="./videos/video-mobile.mp4">
+                <video id="gasBGVideo" class="bg-video" autoplay loop muted playsinline srcdesk="" srcmob="">
                     <source data-src="./videos/projects/gas.mp4">
                 </video>
             </div>
@@ -388,7 +407,7 @@
                             <div class="inner">Gas Malaysia System</div>
                         </div>
                         <div class="videoButton">
-                            <a class="directButton" href="./cases/gas-malaysia.html">Showcase</a>
+                            <a class="directButton" href="./cases/gas-malaysia">Showcase</a>
                         </div>
                     </div>
                 </div>
@@ -415,8 +434,7 @@
         <div class="section" id="mavcomSection"
             style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
             <div id="mavcomVid" class="bg-videos">
-                <video id="mavcomBGVideo" class="bg-video" autoplay loop muted playsinline srcdesk="./videos/video.mp4"
-                    srcmob="./videos/video-mobile.mp4">
+                <video id="mavcomBGVideo" class="bg-video" autoplay loop muted playsinline srcdesk="" srcmob="">
                     <source data-src="./videos/projects/mavcom.mp4">
                 </video>
             </div>
@@ -429,7 +447,7 @@
                             <div class="inner">Consumer Affairs System</div>
                         </div>
                         <div class="videoButton">
-                            <a class="directButton textShadow" style="" href="./cases/mavcom.html">Showcase</a>
+                            <a class="directButton textShadow" style="" href="./cases/mavcom">Showcase</a>
                         </div>
                     </div>
                 </div>
@@ -456,8 +474,7 @@
         <div class="section" id="fcSection"
             style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
             <div id="fcVid" class="bg-videos">
-                <video id="fcBGVideo" class="bg-video" autoplay loop muted playsinline srcdesk="./videos/video.mp4"
-                    srcmob="./videos/video-mobile.mp4">
+                <video id="fcBGVideo" class="bg-video" autoplay loop muted playsinline srcdesk="" srcmob="">
                     <source data-src="./videos/projects/firstclasse.mp4">
                 </video>
             </div>
@@ -471,7 +488,7 @@
                             <div class="inner">FirstClasse Website</div>
                         </div>
                         <div class="videoButton">
-                            <a class="directButton" href="./cases/firstclasse.html">Showcase</a>
+                            <a class="directButton" href="./cases/firstclasse">Showcase</a>
                         </div>
                     </div>
                 </div>
@@ -507,8 +524,7 @@
         <div class="section" id="privasiaSection"
             style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
             <div id="privasiaVid" class="bg-videos">
-                <video id="privasiaBGVideo" class="bg-video" autoplay loop muted playsinline
-                    srcdesk="./videos/video.mp4" srcmob="./videos/video-mobile.mp4">
+                <video id="privasiaBGVideo" class="bg-video" autoplay loop muted playsinline srcdesk="" srcmob="">
                     <source data-src="./videos/projects/privasia.mp4">
                 </video>
             </div>
@@ -521,7 +537,7 @@
                             <div class="inner">Fleet Management System</div>
                         </div>
                         <div class="videoButton">
-                            <a class="directButton" href="./cases/privasia.html">Showcase</a>
+                            <a class="directButton" href="./cases/privasia">Showcase</a>
                         </div>
                     </div>
                 </div>
@@ -558,13 +574,13 @@
         <div class="section" id="col1Section"
             style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
             <div id="conteneur">
-                <div class="content_box"><a href="./cases/fashionvalet.html" class="image number1"><span
+                <div class="content_box"><a href="./cases/fashionvalet" class="image number1"><span
                             class="image_sup fashion"></span></a></div>
-                <div class="content_box"><a href="./cases/fobo.html" class="image number2"><span
+                <div class="content_box"><a href="./cases/fobo" class="image number2"><span
                             class="image_sup fobo"></span></a></div>
-                <div class="content_box"><a href="./cases/maybank.html" class="image number3"><span
+                <div class="content_box"><a href="./cases/maybank" class="image number3"><span
                             class="image_sup maybank"></span></a></div>
-                <div class="content_box"><a href="./cases/jr-arts.html" class="image number4"><span
+                <div class="content_box"><a href="./cases/jr-arts" class="image number4"><span
                             class="image_sup jr"></span></a></div>
             </div>
         </div>
@@ -574,12 +590,12 @@
             style="transform: translate(0px, 682px); width: 1280px; height: 682px; display: block;">
             <div id="conteneur">
                 <div class="content_box">
-                    <a href="./cases/epilepsy.html" class="image number5">
+                    <a href="./cases/epilepsy" class="image number5">
                         <span class="image_sup epilepsy"></span>
                     </a>
                 </div>
                 <div class="content_box">
-                    <a href="./cases/kingdomcity.html" class="image number6">
+                    <a href="./cases/kingdomcity" class="image number6">
                         <span class="image_sup kingdom"></span>
                     </a>
                 </div>
@@ -617,52 +633,52 @@
             <div class="close-menu"><span class="fa fa-times"></span></div>
             <nav id="sidebar-wrapper">
                 <div class="sidebar-nav" style="overflow-y:auto !important;height:100%;display:none">
-                    <a href="./cases/prudential.html">
+                    <a href="./cases/prudential">
                         <div class="nav-elem prudential"></div>
                     </a>
-                    <a href="./cases/anycubed.html">
+                    <a href="./cases/anycubed">
                         <div class="nav-elem anycubed"></div>
                     </a>
-                    <a href="./cases/sse.html">
+                    <a href="./cases/sse">
                         <div data-page="1" class="nav-elem sse"></div>
                     </a>
-                    <a href="./cases/lg.html">
+                    <a href="./cases/lg">
                         <div data-page="1" class="nav-elem lg"></div>
                     </a>
-                    <a href="./cases/sea-games.html">
+                    <a href="./cases/sea-games">
                         <div data-page="1" class="nav-elem sg"></div>
                     </a>
-                    <a href="./cases/wilmar.html">
+                    <a href="./cases/wilmar">
                         <div data-page="1" class="nav-elem wilmar"></div>
                     </a>
-                    <a href="./cases/gas-malaysia.html">
+                    <a href="./cases/gas-malaysia">
                         <div data-page="1" class="nav-elem gas"></div>
                     </a>
-                    <a href="./cases/mavcom.html">
+                    <a href="./cases/mavcom">
                         <div data-page="2" class="nav-elem mavcom"></div>
                     </a>
-                    <a href="./cases/firstclasse.html">
+                    <a href="./cases/firstclasse">
                         <div data-page="3" class="nav-elem fc"></div>
                     </a>
-                    <a href="./cases/privasia.html">
+                    <a href="./cases/privasia">
                         <div data-page="4" class="nav-elem privasia"></div>
                     </a>
-                    <a href="./cases/fashionvalet.html">
+                    <a href="./cases/fashionvalet">
                         <div data-page="5" class="nav-elem fv"></div>
                     </a>
-                    <a href="./cases/fobo.html">
+                    <a href="./cases/fobo">
                         <div data-page="6" class="nav-elem fobo"></div>
                     </a>
-                    <a href="./cases/maybank.html">
+                    <a href="./cases/maybank">
                         <div data-page="7" class="nav-elem maybank"></div>
                     </a>
-                    <a href="./cases/jr-arts.html">
+                    <a href="./cases/jr-arts">
                         <div data-page="8" class="nav-elem jr"></div>
                     </a>
-                    <a href="./cases/epilepsy.html">
+                    <a href="./cases/epilepsy">
                         <div data-page="8" class="nav-elem epilepsy"></div>
                     </a>
-                    <a href="./cases/kingdomcity.html">
+                    <a href="./cases/kingdomcity">
                         <div data-page="8" class="nav-elem kingdom"></div>
                     </a>
                 </div>
@@ -753,24 +769,6 @@
             });
         });
         //Easing Scroll replace Anchor name in URL and Offset Position
-        $(function () {
-            var content = document.querySelector('link[rel="import"]').import;
-            $('a[href*=\\#]:not([href=\\#])').click(function () {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//,
-                        '') && location.hostname == this.hostname) {
-
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) +
-                        ']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top - 420
-                        }, 3500, 'easeOutBounce');
-                        return false;
-                    }
-                }
-            });
-        });
     </script>
     <!-- End of Async HubSpot Analytics Code -->
 

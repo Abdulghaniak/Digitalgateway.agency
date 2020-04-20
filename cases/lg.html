@@ -28,7 +28,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../site.webmanifest">
+    <link rel="manifest" href="../../img/favicon/site.webmanifest">
 
     <meta name="description"
         content="DG worked collaboratively with LG CNS to build a delightful Journey Planner that provides journey planning, timetable and live running travel information from all licenced public transport providers across Malaysia.">
@@ -66,6 +66,33 @@
 </head>
 
 <body class="pace-done  out-black-bg" style="">
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v6.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="104978131189298" theme_color="#0f89ca"
+        greeting_dialog_display="hide"
+        logged_in_greeting="Hi! How can we help? Tell us a bit of what your’re trying to accomplish."
+        logged_out_greeting="Hi! How can we help? Tell us a bit of what your’re trying to accomplish.">
+    </div>
+
     <!--[if lt IE 10]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -74,7 +101,7 @@
     <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="./../index.html"><img src="/img/logos/global-nav-logo.png"
+            <a class="navbar-brand js-scroll-trigger" href="./../"><img src="/img/logos/global-nav-logo.png"
                     class="nav-logo" />
                 <span class="nav-text">Digital Gateway</span>
             </a>
@@ -87,24 +114,27 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="../services.html">Services</a>
+                        <a class="nav-link js-scroll-trigger" href="../">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="../work.html">Work</a>
+                        <a class="nav-link js-scroll-trigger" href="../services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="../about.html">About</a>
+                        <a class="nav-link js-scroll-trigger" href="../work">Work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="../contact.html">Contact</a>
+                        <a class="nav-link js-scroll-trigger" href="../about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../contact">Contact</a>
                     </li>
                     <li class="nav-item">
                         <ul class="mini-menu-container">
                             <li><a href="Javascript:void(0);" title="Menu" class="anim open-menu"><span
                                         class="fa fa-clone"></span><span class="text-menu">Menu</span></a></li>
-                            <li><a href="sse.html" title="Previous" class="anim animsition-link"><span
+                            <li><a href="sse" title="Previous" class="anim animsition-link"><span
                                         class="fa fa-reply"></span><span class="text-menu">Back</span></a></li>
-                            <li><a href="sea-games.html" title="Next" class="anim animsition-link"><span
+                            <li><a href="sea-games" title="Next" class="anim animsition-link"><span
                                         class="fa fa-share"></span><span class="text-menu">Next</span></a></li>
                         </ul>
                     </li>
@@ -126,68 +156,68 @@
         <div class="close-menu"><span class="fa fa-times"></span></div>
         <ul>
             <li>
-                <a href="./prudential.html" class="image animsition-link menu-prudential first"></a>
-                <p><a href="./prudential.html">Prudential<br><span>Website</span></a></p>
+                <a href="./prudential" class="image animsition-link menu-prudential first"></a>
+                <p><a href="./prudential">Prudential<br><span>Website</span></a></p>
             </li>
             <li>
-                <a href="./anycubed.html" class="image animsition-link menu-anycubed"></a>
-                <p><a href="./anycubed.html">Anycubed<br><span>Full Project</span></a></p>
+                <a href="./anycubed" class="image animsition-link menu-anycubed"></a>
+                <p><a href="./anycubed">Anycubed<br><span>Full Project</span></a></p>
             </li>
             <li>
-                <a href="./sse.html" class="image animsition-link menu-sse"></a>
-                <p><a href="./sse.html">SSE Airtricity<br><span>Website</span></a></p>
+                <a href="./sse" class="image animsition-link menu-sse"></a>
+                <p><a href="./sse">SSE Airtricity<br><span>Website</span></a></p>
             </li>
             <li>
-                <a href="./lg.html" class="image animsition-link menu-lg"></a>
-                <p><a href="./lg.html">LG<br><span>Web App</span></a></p>
+                <a href="./lg" class="image animsition-link menu-lg"></a>
+                <p><a href="./lg">LG<br><span>Web App</span></a></p>
             </li>
             <li>
-                <a href="./sea-games.html" class="image animsition-link menu-seagames"></a>
-                <p><a href="./sea-games.html">Seagames<br><span>Web & Mobile App</span></a></p>
+                <a href="./sea-games" class="image animsition-link menu-seagames"></a>
+                <p><a href="./sea-games">Seagames<br><span>Web & Mobile App</span></a></p>
             </li>
             <li>
-                <a href="./wilmar.html" class="image animsition-link menu-wilmar"></a>
-                <p><a href="./wilmar.html">Wilmar<br><span>Website</span></a></p>
+                <a href="./wilmar" class="image animsition-link menu-wilmar"></a>
+                <p><a href="./wilmar">Wilmar<br><span>Website</span></a></p>
             </li>
             <li>
-                <a href="./gas-malaysia.html" class="image animsition-link menu-gas"></a>
-                <p><a href="./gas-malaysia.html">Gas Malaysia<br><span>Web App</span></a></p>
+                <a href="./gas-malaysia" class="image animsition-link menu-gas"></a>
+                <p><a href="./gas-malaysia">Gas Malaysia<br><span>Web App</span></a></p>
             </li>
             <li>
-                <a href="./mavcom.html" class="image animsition-link menu-mavcom"></a>
-                <p><a href="./mavcom.html">Mavcom<br><span>Website</span></a></p>
+                <a href="./mavcom" class="image animsition-link menu-mavcom"></a>
+                <p><a href="./mavcom">Mavcom<br><span>Website</span></a></p>
             </li>
             <li>
-                <a href="./firstclasse.html" class="image animsition-link menu-firstclasse"></a>
-                <p><a href="./firstclasse.html">First Classe<br><span>Website</span></a></p>
+                <a href="./firstclasse" class="image animsition-link menu-firstclasse"></a>
+                <p><a href="./firstclasse">First Classe<br><span>Website</span></a></p>
             </li>
             <li>
-                <a href="./privasia.html" class="image animsition-link menu-privasia"></a>
-                <p><a href="./privasia.html">Privasia<br><span>Web App</span></a></p>
+                <a href="./privasia" class="image animsition-link menu-privasia"></a>
+                <p><a href="./privasia">Privasia<br><span>Web App</span></a></p>
             </li>
             <li>
-                <a href="./fashionvalet.html" class="image animsition-link menu-fashion"></a>
-                <p><a href="./fashionvalet.html">Fashion Valet<br><span>Mobile Prototype</span></a></p>
+                <a href="./fashionvalet" class="image animsition-link menu-fashion"></a>
+                <p><a href="./fashionvalet">Fashion Valet<br><span>Mobile Prototype</span></a></p>
             </li>
             <li>
-                <a href="./fobo.html" class="image animsition-link menu-fobo"></a>
-                <p><a href="./fobo.html">Fobo<br><span>Android App</span></a></p>
+                <a href="./fobo" class="image animsition-link menu-fobo"></a>
+                <p><a href="./fobo">Fobo<br><span>Android App</span></a></p>
             </li>
             <li>
-                <a href="./maybank.html" class="image animsition-link menu-maybank"></a>
-                <p><a href="./maybank.html">Maybank<br><span>Web Prototype</span></a></p>
+                <a href="./maybank" class="image animsition-link menu-maybank"></a>
+                <p><a href="./maybank">Maybank<br><span>Web Prototype</span></a></p>
             </li>
             <li>
-                <a href="./jr-arts.html" class="image animsition-link menu-jr"></a>
-                <p><a href="jr-arts.html">JR Arts<br><span>Hybrid App</span></a></p>
+                <a href="./jr-arts" class="image animsition-link menu-jr"></a>
+                <p><a href="jr-arts">JR Arts<br><span>Hybrid App</span></a></p>
             </li>
             <li>
-                <a href="./epilepsy.html" class="image animsition-link menu-epilepsy"></a>
-                <p><a href="./epilepsy.html">Epilepsy<br><span>Wearable App</span></a></p>
+                <a href="./epilepsy" class="image animsition-link menu-epilepsy"></a>
+                <p><a href="./epilepsy">Epilepsy<br><span>Wearable App</span></a></p>
             </li>
             <li>
-                <a href="./kingdomcity.html" class="image animsition-link menu-kingdom last"></a>
-                <p><a href="./kingdomcity.html" class="menu-kingdom-text">Kingdom City<br><span>Web & Mobile
+                <a href="./kingdomcity" class="image animsition-link menu-kingdom last"></a>
+                <p><a href="./kingdomcity" class="menu-kingdom-text">Kingdom City<br><span>Web & Mobile
                             App</span></a>
                 </p>
             </li>
@@ -365,7 +395,7 @@
         <div class="container global-footer-wrapper">
             <div class="row">
                 <div class="global-footer-branding col-md-4">
-                    <a class="dg-brand" href="./../index.html">
+                    <a class="dg-brand" href="./../">
                         <img src="./../img/logos/dg-row.png" class="nav-logo" />
                     </a>
                     <div class="dg-mantra">
@@ -402,19 +432,19 @@
                 <div class="global-footer-nav col-md-4">
                     <ul>
                         <li class="global-footer-item">
-                            <a class="global-footer-link" href="./../index.html">Home</a>
+                            <a class="global-footer-link" href="./../">Home</a>
                         </li>
                         <li class="global-footer-item">
-                            <a class="global-footer-link" href="./services.html">Services</a>
+                            <a class="global-footer-link" href="./services">Services</a>
                         </li>
                         <li class="global-footer-item">
-                            <a class="global-footer-link" href="./work.html">Work</a>
+                            <a class="global-footer-link" href="./work">Work</a>
                         </li>
                         <li class="global-footer-item">
-                            <a class="global-footer-link" href="./about.html">About</a>
+                            <a class="global-footer-link" href="./about">About</a>
                         </li>
                         <li class="global-footer-item">
-                            <a class="global-footer-link" href="./contact.html">Contact</a>
+                            <a class="global-footer-link" href="./contact">Contact</a>
                         </li>
                     </ul>
                 </div>
